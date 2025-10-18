@@ -1,42 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+nav {
+  height: 70px;
+  background-color: #08979C;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.segment-btn {
+  border: 2px solid rgb(61, 61, 61);
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: white;
+  color: rgb(61, 61, 61);
+  position: relative;
+  left: 100px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save-btn {
+  border: 2px solid whitesmoke;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #28bf99;
+  color: white;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cancel-btn {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: white;
+  color: red;
+  font-weight: 700;
 }
 
-.card {
-  padding: 2em;
+.form-control {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid rgb(47, 47, 47);
 }
 
-.read-the-docs {
-  color: #888;
+.text-underline {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #28bf99;
+  font-weight: bold;
+
+}
+
+.remove-container {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #effafa;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.selected-schemas-container {
+  border: #2cb4cc 2px solid;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+}
+
+.circle-user-traits {
+  background-color: #4bfe86;
+}
+
+.circle-group-traits {
+  background-color: rgb(133, 25, 25);
 }
